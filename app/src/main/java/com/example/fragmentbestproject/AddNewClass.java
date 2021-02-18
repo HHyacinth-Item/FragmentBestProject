@@ -1,4 +1,4 @@
 package com.example.fragmentbestproject;
 
-public class NewClass {
+public class AddNewClass {
 }
