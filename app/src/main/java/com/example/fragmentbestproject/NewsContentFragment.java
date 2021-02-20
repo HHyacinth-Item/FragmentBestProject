@@ -19,6 +19,7 @@ public class NewsContentFragment extends Fragment {
         view = inflater.inflate(R.layout.news_content_frag,container,false);
         return view;
     }
+
     public void refresh(String newsTitle,String newsContent){
         View visibilityLayout = view.findViewById(R.id.visibility_layout);
         visibilityLayout.setVisibility(View.VISIBLE);
@@ -26,7 +27,7 @@ public class NewsContentFragment extends Fragment {
         TextView newsTitleText = view.findViewById(R.id.news_title);
         TextView newsContentText = view.findViewById(R.id.news_content);
 
-        newsTitleText.setText(newsTitle);
-        newsContentText.setText(newsContent);
+        newsTitleText.setText(newsTitle);//刷新新闻的标题
+        newsContentText.setText(newsContent);//刷新新闻的内容
     }
 }
